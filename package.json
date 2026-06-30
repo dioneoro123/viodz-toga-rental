@@ -1,0 +1,28 @@
+{
+  "name": "viodz-toga-rental-2026",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "seed:supabase": "node scripts/import-renters-to-supabase.mjs",
+    "seed:check": "node scripts/import-renters-to-supabase.mjs --dry-run",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fluentui/react-components": "^9.69.1",
+    "@fluentui/react-icons": "^2.0.307",
+    "@supabase/supabase-js": "^2.110.0",
+    "@vitejs/plugin-react": "^4.4.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2"
+  }
+}
